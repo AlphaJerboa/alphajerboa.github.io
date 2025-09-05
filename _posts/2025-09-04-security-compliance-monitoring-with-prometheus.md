@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Implementing Prometheus Security Compliance Monitoring for CrowdStrike Falcon Agents"
-date: 2024-09-04 17:00:00 +0000
+date: 2025-09-04 17:00:00 +0000
 categories: [security, monitoring, prometheus]
 tags: [prometheus, crowdstrike, falcon, compliance, alerting]
 author: alphajerboa
