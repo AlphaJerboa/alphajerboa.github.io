@@ -50,5 +50,5 @@ The extracted desktop container maintains XFCE4's lightweight architecture while
 
 ## Availability
 
-The standalone XFCE desktop container is available at: https://github.com/AlphaJerboa/mydockers/tree/main/desktop
+The standalone XFCE desktop container is available [here](https://github.com/AlphaJerboa/mydockers/tree/main/desktop)
 Feel free to use or adapt it. Enjoy !
