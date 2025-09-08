@@ -84,6 +84,7 @@ This configuration:
 The following Ansible tasks authenticate with OpenBao and retrieve the stored certificates:
 
 ```yaml
+{%raw%}
 - name: Sent Curl request to vault
   ansible.builtin.uri:
     url: '{{ openbao_url }}/v1/auth/userpass/login/{{ openbao_username }}'
@@ -124,6 +125,7 @@ The following Ansible tasks authenticate with OpenBao and retrieve the stored ce
   loop: '{{ apicall_output.results }}'
   loop_control:
     label: "{{ item.item.fact_name }}"
+{%endraw%}
 ```
 
 This task sequence:
