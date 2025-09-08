@@ -54,6 +54,10 @@ Where:
 
 The base64 encoding ensures the certificate data is safely stored as text in OpenBao's key-value store, preventing any formatting issues that might occur with multiline PEM data.
 
+## Renewing certificates stored in Openbao
+
+Use a script to check existing certificate and renew them if needed. [Here](https://github.com/AlphaJerboa/sysadmin_scripts/blob/main/renew-letsencrypt-certificate-dns-challenge.sh) is an example to adapt (Use GANDI DNS challenge with the [lego](https://github.com/go-acme/lego) tool)
+
 ## Configuring Ansible for Certificate Deployment
 
 ### Variable Definition
