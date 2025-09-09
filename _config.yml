@@ -20,7 +20,8 @@
 
 title: Jtrack's blog
 email: blog@jtrack.fr
-author: alphajerboa
+author:
+  name: "alphajerboa"
   avatar: "/assets/avatar.jpeg"
 description: >- # this means to ignore newlines until "baseurl:"
   System, network, security articles...
