@@ -5,7 +5,7 @@ date: 2025-09-08 17:00:00 +0000
 categories: [security, monitoring, virtualization, networking, automation, observability, iam, authentication, sso]
 tags: [prometheus, grafana, tailscale, headscale, proxmox, docker, fleetdm, wazuh, lynis, openbao]
 author: alphajerboa
-excerpt: ""
+excerpt: "My sysadmin toolbox"
 ---
 
 
