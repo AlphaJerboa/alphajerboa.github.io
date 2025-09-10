@@ -19,6 +19,7 @@ Automate the deployment across multiple servers using this playbook:
 ### Main Task (`tasks/main.yml`)
 
 ```yaml
+{%raw%}
 ---
 - name: Install unattended-upgrades packages
   ansible.builtin.apt:
@@ -48,6 +49,7 @@ Automate the deployment across multiple servers using this playbook:
   tags: install
   notify:
     - Reload systemd
+{%endraw%}
 ```
 
 ### Handler (`handlers/main.yml`)
@@ -117,6 +119,7 @@ apt_upgrades_pending > 0
 Add these alert rules to your Prometheus configuration to get notified about pending updates and reboot requirements:
 
 ```yaml
+{%raw%}
 groups:
   - name: debian_updates
     rules:
@@ -146,6 +149,7 @@ groups:
         annotations:
           summary: "Server {{ $labels.instance }} has many pending updates"
           description: "{{ $labels.instance }} has {{ $value }} pending updates, immediate attention required"
+{%endraw%}
 ```
 
 ### Grafana Dashboard
@@ -153,6 +157,7 @@ groups:
 Import this dashboard configuration for a clean view of pending updates:
 
 ```json
+{%raw%}
 {
   "annotations": {
     "list": [
@@ -421,6 +426,7 @@ Import this dashboard configuration for a clean view of pending updates:
   "uid": "debian_updates_dashboard",
   "version": 1
 }
+{%endraw%}
 ```
 
 
