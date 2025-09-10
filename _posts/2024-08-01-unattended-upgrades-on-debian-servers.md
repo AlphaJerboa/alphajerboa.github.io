@@ -43,6 +43,8 @@ Automate the deployment across multiple servers using this playbook:
   with_items:
     - src: "files/50unattended-upgrades"
       dest: "/etc/apt/apt.conf.d/50unattended-upgrades"
+    - src: "files/50uapt-periodic"
+      dest: "/etc/apt/apt.conf.d/50apt-periodic"
     - src: "files/apt-daily-upgrade.timer.override.conf"
       dest: "/etc/systemd/system/apt-daily-upgrade.timer.d/override.conf"
   become: true
@@ -67,6 +69,7 @@ Automate the deployment across multiple servers using this playbook:
 Create the required files:
 ```
 ─── files/
+    ├── 50apt-periodic
     ├── 50unattended-upgrades
     └── apt-daily-upgrade.timer.override.conf
 ```
@@ -76,6 +79,14 @@ The file files/apt-daily-upgrade.timer.override.conf can be used to override def
 [Timer]
 OnCalendar=
 OnCalendar=Mon *-*-* 06:00:00
+```
+
+Create the file files/50apt-periodic
+```
+# Increase verbose to get activity details in journald
+APT::Periodic::Verbose "2";
+APT::Periodic::Update-Package-Lists "1";
+APT::Periodic::Unattended-Upgrade "1";
 ```
 
 Finetune the file 50unattended-upgrades, specially the section Unattended-Upgrade::Package-Blacklist in a production environment, here is an extract:
