@@ -30,12 +30,12 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  alphajerboa
 
 # Build settings
-theme: jekyll-theme-minimal
-remote_theme: pages-themes/minimal
+theme: minima
+#theme: jekyll-theme-minimal
+#remote_theme: pages-themes/minimal
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-remote-theme
 #  - jekyll-remote-theme
 
 license:
