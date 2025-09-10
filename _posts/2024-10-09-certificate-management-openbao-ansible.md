@@ -21,8 +21,10 @@ Managing SSL/TLS certificates across your infrastructure becomes seamless when y
 First, we'll store the DNS registrar API key in OpenBao, which will be used for the DNS challenge during Let's Encrypt certificate generation:
 
 ```bash
+{%raw%}
 # Store the DNS registrar API key in OpenBao
 bao kv put -mount kv cloud/dnsregistrar api_key="your-dns-api-key"
+{%endraw%}
 ```
 
 ### Retrieving API Keys for Certificate Generation
@@ -30,8 +32,10 @@ bao kv put -mount kv cloud/dnsregistrar api_key="your-dns-api-key"
 When generating Let's Encrypt certificates using DNS challenge, retrieve the API key from OpenBao:
 
 ```bash
+{%raw%}
 # Retrieve the DNS registrar API key
 API_KEY=$(bao kv get -format json -mount kv cloud/dnsregistrar | jq -r '.data.data.api_key')
+{%endraw%}
 ```
 
 This approach ensures that sensitive API credentials are never hardcoded in your automation scripts or stored in plain text files.
@@ -41,10 +45,12 @@ This approach ensures that sensitive API credentials are never hardcoded in your
 Once the Let's Encrypt certificate is generated using the DNS challenge, store both the certificate and private key in OpenBao encoded in base64:
 
 ```bash
+{%raw%}
 # Store certificate and private key in OpenBao (base64 encoded)
 bao kv put -mount kv services/$DOMAIN \
     public_key="$(cat $CRT_FILE | base64 -w0)" \
     private_key="$(cat $KEY_FILE | base64 -w0)"
+{%endraw%}
 ```
 
 Where:
@@ -65,6 +71,7 @@ Use a script to check existing certificate and renew them if needed. [Here](http
 Define the OpenBao paths and secrets to retrieve in your Ansible variables:
 
 ```yaml
+{%raw%}
 # Ansible variables for OpenBao integration
 vault_kv_path: "kv/data"
 
@@ -75,6 +82,7 @@ vault_secrets:
   - fact_name: "svc_cert_key"
     vault_path: "{{ vault_kv_path }}/services/{{ service_fqdn.split(',')[0] }}"
     value_name: "private_key"
+{%endraw%}
 ```
 
 This configuration:
@@ -143,6 +151,7 @@ This task sequence:
 Once the certificate data is retrieved and stored in Ansible facts, deploy them to the target servers:
 
 ```yaml
+{%raw%}
 - name: Create public certificate
   ansible.builtin.copy:
     content: '{{ svc_cert_pub | b64decode }}'
@@ -156,6 +165,7 @@ Once the certificate data is retrieved and stored in Ansible facts, deploy them 
     dest: '{{ web_cert_folder }}/{{ service_fqdn }}.key'
     mode: 0640
   when: svc_cert_key
+{%endraw%}
 ```
 
 These deployment tasks:

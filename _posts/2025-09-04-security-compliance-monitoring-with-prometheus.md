@@ -37,6 +37,7 @@ group by (instance) (
 Add this rule to your Prometheus configuration:
 
 ```yaml
+{%raw%}
 groups:
   - name: security_compliance
     rules:
@@ -58,6 +59,7 @@ groups:
             The CrowdStrike Falcon endpoint protection agent is not active on 
             {{ $labels.instance }}. This requires immediate attention.
           remediation: "Verify falcon-sensor.service status and restart if necessary"
+{%endraw%}
 ```
 
 
@@ -65,15 +67,18 @@ groups:
 
 **Multi-environment support:**
 ```promql
+{%raw%}
 group by (instance, environment) (
   up{job="servers", environment=~"production|staging"}==1 
   unless on(instance) 
   node_systemd_unit_state{name="falcon-sensor.service", state="active"}
 )
+{%endraw%}
 ```
 
 **Grace period for new systems:**
 ```promql
+{%raw%}
 group by (instance) (
   up{job="servers"}==1 
   unless on(instance) 
@@ -81,15 +86,18 @@ group by (instance) (
 ) 
 and on(instance) 
 (time() - node_boot_time_seconds) > 3600
+{%endraw%}
 ```
 
 **Handle exceptions:**
 ```promql
+{%raw%}
 group by (instance) (
   up{job="servers", falcon_required!="false"}==1 
   unless on(instance) 
   node_systemd_unit_state{name="falcon-sensor.service", state="active"}
 )
+{%endraw%}
 ```
 
 ### Compliance Metrics
@@ -97,6 +105,7 @@ group by (instance) (
 Monitor overall compliance status:
 
 ```promql
+{%raw%}
 # Total managed servers
 count(up{job="servers"}==1)
 
@@ -105,4 +114,5 @@ count(node_systemd_unit_state{name="falcon-sensor.service", state="active"})
 
 # Compliance percentage
 (count(node_systemd_unit_state{name="falcon-sensor.service", state="active"}) / count(up{job="servers"}==1)) * 100
+{%endraw%}
 ```
