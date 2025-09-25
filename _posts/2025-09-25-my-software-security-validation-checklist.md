@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My Security Software Validation Checklist"
-date: 2025-09-25 16:00:00 +0000
+date: 2025-09-25 13:00:00 +0000
 categories: [security, osint]
 tags: [sca, osint, sbom]
 author: alphajerboa
