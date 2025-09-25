@@ -8,11 +8,13 @@ author: alphajerboa
 excerpt: "How to evaluate software trustworthiness and security"
 ---
 
+## My Security Software Validation Checklist
+
 My go-to checklist for security evaluations when a colleague requests installing some new software in the enterprise
 
-## Product Quality Evaluation
+### Product Quality Evaluation
 
-### Company, Community, and Committer Reputation Assessment
+#### Company, Community, and Committer Reputation Assessment
 
 **Open Source Intelligence (OSINT) Research**
 - Research the development team's background and security track record
@@ -21,9 +23,9 @@ My go-to checklist for security evaluations when a colleague requests installing
 - Check for any past security incidents or controversies
 - Review funding sources and potential conflicts of interest
 
-### Code Quality Evaluation
+#### Code Quality Evaluation
 
-#### Static Code Analysis
+##### Static Code Analysis
 
 *For Open Source Software:*
 - **Manual Code Review**: Conduct targeted manual review of critical components
@@ -52,7 +54,7 @@ My go-to checklist for security evaluations when a colleague requests installing
 - **License Compliance Review**: Ensure dependency licenses align with organizational policies
 
 
-#### Dynamic Code Analysis
+##### Dynamic Code Analysis
 
 **Online Malware Analysis and Sandboxing**
 - **VirusTotal** (https://www.virustotal.com/gui/): Submit binaries for multi-engine analysis
@@ -76,7 +78,7 @@ For thorough analysis, install software in vanilla operating systems with OTX en
 - Evaluate input validation and injection vulnerabilities
 - Assess authorization controls and privilege escalation risks
 
-## Secure Development Guidelines Compliance
+### Secure Development Guidelines Compliance
 
 **GitHub Security Features Review**
 - Examine the Security tab for vulnerability alerts and advisories
@@ -85,30 +87,30 @@ For thorough analysis, install software in vanilla operating systems with OTX en
 - Review code scanning alerts and remediation status
 - Assess secret scanning configurations and findings
 
-## External Security Intelligence
+### External Security Intelligence
 
-### Standards, Regulations, and Certification Compliance
+#### Standards, Regulations, and Certification Compliance
 
 - **Industry Certifications**: Verify SOC 2, ISO 27001, or relevant compliance certifications
 - **Regulatory Alignment**: Ensure compliance with GDPR, CCPA, HIPAA, or applicable regulations
 - **Security Standards**: Check adherence to OWASP, NIST, or industry-specific security frameworks
 - **Audit Reports**: Review available third-party security assessments
 
-### Bug Bounty Programs
+#### Bug Bounty Programs
 
 - **Active Programs**: Check Bugcrowd (https://www.bugcrowd.com/bug-bounty-list/) for active bounty programs
 - **Historical Findings**: Review past vulnerability disclosures and remediation timelines
 - **Researcher Engagement**: Evaluate vendor responsiveness to security researcher reports
 - **Scope and Rewards**: Assess the comprehensiveness of bug bounty program scope
 
-### External Security Assessments
+#### External Security Assessments
 
 - **Penetration Testing Reports**: Request and review recent third-party penetration test results
 - **Security Audit Documentation**: Examine formal security audits by reputable firms
 - **Contractor Assessments**: Evaluate security reviews conducted by external specialists
 - **Remediation Evidence**: Verify that identified issues have been properly addressed
 
-### Security Advisory and Vulnerability Research
+#### Security Advisory and Vulnerability Research
 
 - **Known Vulnerabilities**: Search CVE databases for reported security issues
 - **Exploit Availability**: Check for publicly available exploits or proof-of-concept code
@@ -116,7 +118,7 @@ For thorough analysis, install software in vanilla operating systems with OTX en
 - **Threat Intelligence**: Consult threat intelligence feeds for indicators of compromise
 - **Zero-day Research**: Monitor security research publications for emerging threats
 
-### Data Privacy Policy Evaluation
+#### Data Privacy Policy Evaluation
 
 - **Privacy Documentation**: Review comprehensive privacy policies and data handling practices
 - **Data Collection Scope**: Assess what data is collected, processed, and stored
