@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Reverse Ansible: When the Target Pulls Its Own Configuration"
-date: 2025-09-25 15:30:00 +0000
+date: 2025-09-25 15:10:00 +0000
 categories: [automation, gitops]
 tags: [ansible, git, github, bash]
 author: alphajerboa
