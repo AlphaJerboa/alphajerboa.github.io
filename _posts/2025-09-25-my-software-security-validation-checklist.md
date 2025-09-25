@@ -8,8 +8,6 @@ author: alphajerboa
 excerpt: "How to evaluate software trustworthiness and security"
 ---
 
-# My Security Validation Checklist
-
 My go-to checklist for security evaluations when a colleague requests installing some new software in the enterprise
 
 ## Product Quality Evaluation
