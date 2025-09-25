@@ -6,6 +6,7 @@ categories: [security, osint]
 tags: [sca, osint, sbom]
 author: alphajerboa
 excerpt: "How to evaluate software trustworthiness and security"
+---
 
 # My Security Validation Checklist
 
