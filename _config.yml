@@ -24,7 +24,7 @@ author:
   email: "blog@jtrack.fr"
 
 avatar: "/assets/avatar.jpeg"
-logo: "/assets/avatar.jpeg"
+logo: "/assets/logo.png"
 description: >- # this means to ignore newlines until "baseurl:"
   System, network, security articles...
 baseurl: "" # the subpath of your site, e.g. /blog
