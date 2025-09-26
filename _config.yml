@@ -31,6 +31,8 @@ github_username:  alphajerboa
 
 # Build settings
 theme: minima
+minima:
+  skin: dark
 #theme: jekyll-theme-minimal
 #remote_theme: pages-themes/minimal
 plugins:
