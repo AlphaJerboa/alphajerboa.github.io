@@ -33,7 +33,7 @@ github_username:  alphajerboa
 
 # Build settings
 #theme: minima
-remote_theme: jekyll/minima
+remote_theme: jekyll/minimal
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
