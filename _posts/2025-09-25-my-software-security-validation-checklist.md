@@ -5,6 +5,8 @@ date: 2025-09-25 13:00:00 +0000
 categories: [security, osint]
 tags: [sca, osint, sbom]
 author: alphajerboa
+license: "CC BY 4.0"
+license_url: "https://creativecommons.org/licenses/by/4.0/"
 excerpt: "How to evaluate software trustworthiness and security"
 ---
 

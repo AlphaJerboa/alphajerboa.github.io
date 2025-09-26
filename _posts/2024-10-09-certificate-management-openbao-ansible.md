@@ -5,6 +5,8 @@ date: 2024-10-09 16:59:00 +0000
 categories: [security, automation]
 tags: [letsencrypt, ansible, openbao]
 author: alphajerboa
+license: "CC BY 4.0"
+license_url: "https://creativecommons.org/licenses/by/4.0/"
 excerpt: "Certificate management with Openbao and Ansible"
 ---
 

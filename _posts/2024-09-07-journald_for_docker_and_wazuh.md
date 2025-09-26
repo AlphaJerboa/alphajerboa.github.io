@@ -5,6 +5,8 @@ date: 2024-09-07 12:35:00 +0000
 categories: [container, security]
 tags: [docker, wazuh]
 author: alphajerboa
+license: "CC BY 4.0"
+license_url: "https://creativecommons.org/licenses/by/4.0/"
 excerpt: "Centralizing Container Logs: Wazuh Journald + Docker Log Driver Setup"
 ---
 

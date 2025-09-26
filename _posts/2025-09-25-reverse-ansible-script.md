@@ -5,6 +5,8 @@ date: 2025-09-25 15:10:00 +0000
 categories: [automation, gitops]
 tags: [ansible, git, github, bash]
 author: alphajerboa
+license: "CC BY 4.0"
+license_url: "https://creativecommons.org/licenses/by/4.0/"
 excerpt: "GitOps-style workstation management with a single command!"
 ---
 

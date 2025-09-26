@@ -5,6 +5,8 @@ date: 2025-09-04 17:00:00 +0000
 categories: [security, monitoring, prometheus]
 tags: [prometheus, crowdstrike, falcon, compliance, alerting]
 author: alphajerboa
+license: "CC BY 4.0"
+license_url: "https://creativecommons.org/licenses/by/4.0/"
 excerpt: "Compliance monitoring using Prometheus."
 ---
 

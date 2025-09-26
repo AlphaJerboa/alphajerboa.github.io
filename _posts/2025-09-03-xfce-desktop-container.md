@@ -5,6 +5,8 @@ date: 2025-09-03 13:00:00 +0000
 categories: [security, container, ia]
 tags: [docker]
 author: alphajerboa
+license: "CC BY 4.0"
+license_url: "https://creativecommons.org/licenses/by/4.0/"
 excerpt: "Desktop in docker container"
 ---
 # Extracting XFCE Desktop Environment from ByteBot

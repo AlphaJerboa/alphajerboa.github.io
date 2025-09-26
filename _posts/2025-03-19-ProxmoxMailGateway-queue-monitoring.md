@@ -5,6 +5,8 @@ date: 2025-03-19 18:52:00 +0000
 categories: [monitoring, automation]
 tags: [proxmox mail gateway, prometheus, grafana]
 author: alphajerboa
+license: "CC BY 4.0"
+license_url: "https://creativecommons.org/licenses/by/4.0/"
 excerpt: "Tutorial to monitoring Proxmox Mail gateway queue with Prometheus"
 ---
 

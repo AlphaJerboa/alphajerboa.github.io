@@ -5,6 +5,8 @@ date: 2024-08-01 17:55:00 +0000
 categories: [security, automation]
 tags: [ansible, prometheus, grafana]
 author: alphajerboa
+license: "CC BY 4.0"
+license_url: "https://creativecommons.org/licenses/by/4.0/"
 excerpt: "Turn unattended upgrades on Debian systems"
 ---
 

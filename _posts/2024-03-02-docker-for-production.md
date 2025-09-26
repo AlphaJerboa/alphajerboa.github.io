@@ -5,6 +5,8 @@ date: 2024-03-02 07:35:00 +0000
 categories: [container, virtualization, automation]
 tags: [doicker]
 author: alphajerboa
+license: "CC BY 4.0"
+license_url: "https://creativecommons.org/licenses/by/4.0/"
 excerpt: "Why Docker Belongs in Your Production Environment: A System Engineer's Perspective"
 ---
 
