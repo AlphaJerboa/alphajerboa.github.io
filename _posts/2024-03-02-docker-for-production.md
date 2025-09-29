@@ -3,7 +3,7 @@ layout: post
 title: "Docker for production environment"
 date: 2024-03-02 07:35:00 +0000
 categories: [container, virtualization, automation]
-tags: [doicker]
+tags: [docker]
 author: alphajerboa
 license: "CC BY 4.0"
 license_url: "https://creativecommons.org/licenses/by/4.0/"
