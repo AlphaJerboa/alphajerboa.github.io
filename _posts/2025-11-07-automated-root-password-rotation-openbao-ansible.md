@@ -21,7 +21,7 @@ This workflow automates root password rotation across server fleets using OpenBa
 
 ### Password Generation and Storage
 
-The script https://github.com/AlphaJerboa/sysadmin_scripts/blob/main/openbao_root_password_rotation.sh performs three key operations:
+The bash script (https://github.com/AlphaJerboa/sysadmin_scripts/blob/main/openbao_root_password_rotation.sh) performs three key operations:
 
 1. **Password Generation**: Creates 20-character passwords from alphanumeric and special characters (`?`,`#`,$`,`-`,`_`) using `/dev/urandom`
 2. **Hash Generation**: Produces both SHA-512 and yescrypt hashes using Python's `crypt` module with 16-character random salts
