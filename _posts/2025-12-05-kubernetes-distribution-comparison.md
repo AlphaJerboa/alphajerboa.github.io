@@ -46,7 +46,7 @@ Comparison of popular Kubernetes distributions
 
 ---
 
-## Recommendations for 3-Node Homelab
+## Recommendations 
 
 ### 🏆 **Top Choices: K3s or MicroK8s**
 
@@ -119,7 +119,7 @@ Both are excellent for a 3-node homelab setup:
 
 ## Conclusion
 
-For a **3-node Ubuntu homelab** with ease of setup and built-in storage/LoadBalancer support:
+For a cluster with ease of setup and built-in storage/LoadBalancer support:
 - **MicroK8s** and **K3s** are the clear winners for ease of use
 - **Talos Linux** is the best choice if security and immutability are top priorities
 - Both K3s/MicroK8s provide out-of-the-box functionality for persistent volumes and load balancers
